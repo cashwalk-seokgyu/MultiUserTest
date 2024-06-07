@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMultiUserTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MultiUserTest"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIsManagedProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="isManagedProfile : "
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMultiUserTest" />
+
+    <TextView
+        android:id="@+id/tvIsManagedProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIsManagedProfileTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvIsManagedProfileTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvIsManagedProfileTitle"
+        tools:text="false" />
+
+    <TextView
+        android:id="@+id/tvIsAdminUserTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="isAdminUser : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsManagedProfileTitle" />
+
+    <TextView
+        android:id="@+id/tvIsAdminUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIsAdminUserTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvIsAdminUserTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvIsAdminUserTitle"
+        tools:text="false" />
+
+    <TextView
+        android:id="@+id/tvIsDemoUserTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="isDemoUser : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsAdminUserTitle" />
+
+    <TextView
+        android:id="@+id/tvIsDemoUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIsDemoUserTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvIsDemoUserTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvIsDemoUserTitle"
+        tools:text="false" />
+
+    <TextView
+        android:id="@+id/tvIsSystemUserTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="isSystemUser : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsDemoUserTitle" />
+
+    <TextView
+        android:id="@+id/tvIsSystemUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIsSystemUserTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvIsSystemUserTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvIsSystemUserTitle"
+        tools:text="false" />
+
+    <TextView
+        android:id="@+id/tvSupportsMultipleUsersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="SupportsMultipleUsers : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsSystemUserTitle" />
+
+    <TextView
+        android:id="@+id/tvSupportsMultipleUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSupportsMultipleUsersTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvSupportsMultipleUsersTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvSupportsMultipleUsersTitle"
+        tools:text="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
